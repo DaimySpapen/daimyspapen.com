@@ -1,0 +1,21 @@
+services:
+  site:
+    build: .
+    container_name: daimyspapen.com
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+  
+  deploy-watcher:
+    image: docker:cli
+    container_name: daimyspapen.com_watcher
+    restart: unless-stopped
+    depends_on:
+      - site
+    entrypoint: /bin/sh
+    volumes:
+      - .:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: -c "apk add --no-cache git && sh /app/deploy-poll.sh"
