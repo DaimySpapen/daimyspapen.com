@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "Daimy Spapen",
   "license": "MIT",
-  "private":"true",
+  "private": true,
   "type": "module",
   "dependencies": {
     "express": "^5.2.1"
