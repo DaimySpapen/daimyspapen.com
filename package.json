@@ -1,0 +1,14 @@
+{
+  "name": "daimyspapen.com",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "server.js",
+  "keywords": [],
+  "author": "Daimy Spapen",
+  "license": "MIT",
+  "private":"true",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

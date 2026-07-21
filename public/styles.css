@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #2c2c2a;
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10000; /*ITS OVER NINETHOUSAND!!!*/
+    backdrop-filter: blur(10px);
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 200px;
+    flex: 1;
+}
+
+.aboutme-text {
+    max-width: 600px;
+}
+
+.aboutme-text h1 {
+    font-size: 56px;
+    margin: 0 0 20px;
+}
+
+.aboutme-text p {
+    color: #c7c7c2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 16px;
+}
+
+.aboutme-text a {
+    color: #69aafc;
+}
+
+.aboutme-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.aboutme-links a {
+    padding: 10px 18px;
+    border: 1px solid #69aafc;
+    border-radius: 999px;
+    color: #69aafc;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.aboutme-links a:hover {
+    background: #69aafc;
+    color: #2c2c2a;
+}
+
+.aboutme-pfp {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    .aboutme {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .aboutme-text h1 {
+        font-size: 40px;
+    }
+
+    .aboutme-pfp {
+        width: 180px;
+        height: 180px;
+    }
+}
