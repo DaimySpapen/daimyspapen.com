@@ -21,9 +21,40 @@ header {
     backdrop-filter: blur(10px);
 }
 
+header > div {
+    display: flex;
+    align-items: center;
+}
+
 .name {
     font-size: 25px;
     font-weight: bold;
+}
+
+.mailaddress {
+    margin-left: auto;
+    padding: 9px 14px;
+    border: 1px solid rgba(105, 170, 252, 0.2);
+    border-radius: 999px;
+    color: #69aafc;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s
+        color 0.2s
+        border-color 0.2s;
+}
+
+.mailaddress:hover {
+    color: #2c2c2a;
+    background-color: #69aafc;
+    border-color: #69aafc;
+}
+
+.mailaddress:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
 }
 
 .aboutme {
