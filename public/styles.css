@@ -89,6 +89,29 @@ header > div {
     color: #69aafc;
 }
 
+.aboutme-text .contact-line {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-line a {
+    display: inline-block;
+    font-weight: 600;
+    text-underline-offset: 4px;
+    user-select: all;
+}
+
+.contact-line a:hover {
+    color: #9bc8ff;
+}
+
+.contact-line a:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
 .aboutme-links {
     display: flex;
     gap: 12px;
