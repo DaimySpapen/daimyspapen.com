@@ -95,14 +95,6 @@ header > div {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact-note {
-    display: block;
-    margin-top: 8px;
-    color: #aaa9a4;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
 .contact-line a {
     display: inline-block;
     font-weight: 600;
